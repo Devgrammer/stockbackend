@@ -1,0 +1,55 @@
+[
+  {
+    "ticker": "AAA",
+    "queryCount": 1,
+    "resultsCount": 1,
+    "adjusted": true,
+    "results": [
+      {
+        "T": "AAA",
+        "v": 10507,
+        "vw": 25.0587,
+        "o": 25.12,
+        "c": 25.045,
+        "h": 25.13,
+        "l": 24.9501,
+        "t": 1703192400000,
+        "n": 83
+      }
+    ],
+    "status": "OK",
+    "request_id": "61b0f00d219d3173e9f77b24db9bc77f",
+    "count": 1
+  },
+  {
+    "ticker": "AAAIF",
+    "queryCount": 0,
+    "resultsCount": 0,
+    "adjusted": true,
+    "status": "OK",
+    "request_id": "39fcfea2c2c4e2a72a6ed18bfb2b44c4"
+  },
+  {
+    "ticker": "AAALY",
+    "queryCount": 1,
+    "resultsCount": 1,
+    "adjusted": true,
+    "results": [
+      {
+        "T": "AAALY",
+        "v": 100,
+        "vw": 34.65,
+        "o": 34.65,
+        "c": 34.65,
+        "h": 34.65,
+        "l": 34.65,
+        "t": 1680120000000,
+        "n": 1,
+        "otc": true
+      }
+    ],
+    "status": "OK",
+    "request_id": "f6379a7ab1b7d62b949048e528a5c509",
+    "count": 1
+  }
+]
