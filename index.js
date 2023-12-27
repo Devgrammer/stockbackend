@@ -49,6 +49,17 @@ const fetchPreviousClosePrice = async (ticker) => {
     }
 };
 
+// Function to read stock prices from the file
+const readStockPricesFromFile = () => {
+    try {
+        const data = fs.readFileSync('./stockPrices.json', 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error('Error reading stock prices from file:', error);
+        return [];
+    }
+};
+
 // Function to fetch previous close prices for all symbols
 const fetchPreviousClosePrices = async (tickers) => {
     try {
@@ -87,6 +98,25 @@ app.get('/stocks/:n?', async (req, res) => {
     } catch (error) {
         console.error('Error fetching stocks:', error);
         res.status(500).json({ error: 'Failed to fetch stocks' });
+    }
+});
+
+
+// Route to fetch price for a specific ticker from the stored file
+app.get('/stock/price/:ticker', (req, res) => {
+    const { ticker } = req.params;
+
+    try {
+        const pricesFromFile = readStockPricesFromFile();
+        const requestedPrice = pricesFromFile.find(price => price.ticker === ticker );
+        if (requestedPrice) {
+            res.json({ ticker, price: requestedPrice.results });
+        } else {
+            res.status(404).json({ error: 'Ticker not found or price unavailable' });
+        }
+    } catch (error) {
+        console.error('Error fetching ticker price:', error);
+        res.status(500).json({ error: 'Failed to fetch ticker price' });
     }
 });
 

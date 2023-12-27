@@ -1,5 +1,49 @@
 [
   {
+    "ticker": "A",
+    "queryCount": 1,
+    "resultsCount": 1,
+    "adjusted": true,
+    "results": [
+      {
+        "T": "A",
+        "v": 948390,
+        "vw": 139.6825,
+        "o": 139.31,
+        "c": 139.81,
+        "h": 140.47,
+        "l": 139.0866,
+        "t": 1703624400000,
+        "n": 20991
+      }
+    ],
+    "status": "OK",
+    "request_id": "76b539f96aafb2990c8684cfeac6c74c",
+    "count": 1
+  },
+  {
+    "ticker": "AA",
+    "queryCount": 1,
+    "resultsCount": 1,
+    "adjusted": true,
+    "results": [
+      {
+        "T": "AA",
+        "v": 4505900,
+        "vw": 33.8235,
+        "o": 33.86,
+        "c": 33.87,
+        "h": 34.12,
+        "l": 33.5,
+        "t": 1703624400000,
+        "n": 34962
+      }
+    ],
+    "status": "OK",
+    "request_id": "b1a1984b2c7750d8f91af1d9fd9bad2c",
+    "count": 1
+  },
+  {
     "ticker": "AAA",
     "queryCount": 1,
     "resultsCount": 1,
@@ -7,18 +51,18 @@
     "results": [
       {
         "T": "AAA",
-        "v": 10507,
-        "vw": 25.0587,
-        "o": 25.12,
+        "v": 582,
+        "vw": 25.0868,
+        "o": 25.0893,
         "c": 25.045,
-        "h": 25.13,
-        "l": 24.9501,
-        "t": 1703192400000,
-        "n": 83
+        "h": 25.09,
+        "l": 25.045,
+        "t": 1703624400000,
+        "n": 18
       }
     ],
     "status": "OK",
-    "request_id": "61b0f00d219d3173e9f77b24db9bc77f",
+    "request_id": "bbfecd54ce24d51c55a37b5df0717636",
     "count": 1
   },
   {
@@ -27,7 +71,7 @@
     "resultsCount": 0,
     "adjusted": true,
     "status": "OK",
-    "request_id": "39fcfea2c2c4e2a72a6ed18bfb2b44c4"
+    "request_id": "7ed3dd04bba14fc0dc7408a08c9c0f86"
   },
   {
     "ticker": "AAALY",
@@ -49,7 +93,7 @@
       }
     ],
     "status": "OK",
-    "request_id": "f6379a7ab1b7d62b949048e528a5c509",
+    "request_id": "c6632e325ebc4fe23146ce73777fddf0",
     "count": 1
   }
 ]
